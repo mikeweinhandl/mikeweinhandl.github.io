@@ -1,0 +1,93 @@
+/* Base Elements */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #5d6464;
+  font-family: 'Old Standard TT', Times, "Times New Roman", Georgia, serif;
+}
+
+a {
+  color: #959c9c;
+  font-size: .85em;
+  letter-spacing: .05em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: #5d6464;
+  background-color: #f5f4e9;
+}
+
+a:active {
+  background-color: #ece7ea;
+}
+
+h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  line-height: 1.4em;
+  width: 8em;
+  margin-bottom: 0;
+}
+
+p {
+  line-height: 1.5em;
+  width: 18em;
+  margin: 1em 0 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: .5em .5em .5em 0;
+}
+
+
+/* Layout */
+
+.avatar {
+  background-image: url("img/mikeweinhandl-avatar.jpg");
+  background-size: 100px 100px;
+  background-color: #eaeaea;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.main {
+  padding: 2em;
+  width: 25em;
+  height: 100vh;
+  float: left;
+}
+
+.bg {
+  background-image: url("img/mikeweinhandl-bg.jpg");
+  background-position: 65%;
+  background-size: cover;
+  background-color: #eaeaea;
+  width: calc(100% - 25em);
+  height: 100vh;
+  float: left;
+}
+
+
+/* Clearfix */
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
