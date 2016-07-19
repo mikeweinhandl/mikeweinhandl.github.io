@@ -1,1 +1,0 @@
-# mikeweinhandl.github.io
