@@ -65,18 +65,32 @@ li {
 .main {
   padding: 2em;
   width: 25em;
-  height: 100vh;
   float: left;
 }
 
 .bg {
-  background-image: url("img/mikeweinhandl-bg.jpg");
-  background-position: 65%;
-  background-size: cover;
-  background-color: #eaeaea;
-  width: calc(100% - 25em);
-  height: 100vh;
-  float: left;
+  display: none;
+}
+
+
+/*media queries*/
+
+@media (min-width: 550px) {
+
+  .bg {
+    background-image: url("img/mikeweinhandl-bg.jpg");
+    background-position: 65%;
+    background-size: cover;
+    background-color: #eaeaea;
+    width: calc(100% - 25em);
+    height: 100vh;
+    display: block;
+    float: left;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
 }
 
 
